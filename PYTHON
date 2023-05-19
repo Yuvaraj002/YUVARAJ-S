@@ -1,0 +1,16 @@
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score
+
+# Sample garbage data
+garbage_data = [
+    ("This is a plastic bottle", "plastic"),
+    ("Throw away the paper", "paper"),
+    ("Recycle the glass container", "glass"),
+    ("Dispose of the food waste", "organic"),
+    ("Metal cans should be recycled", "metal")
+    # Add more garbage data here
+]
+
